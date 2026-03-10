@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split , GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score , recall_score , precision_score
 
-df1 = pd.read_csv(r"C:\Users\sailj\OneDrive\文档\GitHub\Fraud Detection Model\creditcard.csv")
+df1 = pd.read_csv("dataset/creditcard.csv")
 
 x = df1.drop(["Class"] , axis=1)
 y = df1["Class"]
